@@ -1,0 +1,70 @@
+@import "./custom_colors";
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.box{
+    font-family: 'karma';
+    font-size: 22px;
+    font-weight: 400;
+    color: $custom-grey-darker;
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 350px;
+}
+.link{
+    text-decoration: none;
+    border-style:dashed;
+    border-width: 1px;
+    border-color: $custom-grey-dark;
+    color: $custom-grey-darker;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+.image{
+    height: 350px;
+}
+.button {
+    margin-left: 350px;
+    font-family: 'karma';
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: $custom-grey;
+    background-color: $custom-grey-darker;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    border-color: $custom-grey;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: $custom-grey-dark;
+    border-color: $custom-grey-darker;
+}
+.black{
+    background-color: $custom-grey-darker;
+}
+
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+      margin-top:0px
+    }
+    .button{
+        margin-left: 40px;
+    }
+  }

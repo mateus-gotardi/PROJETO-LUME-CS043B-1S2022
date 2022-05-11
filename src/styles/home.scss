@@ -1,0 +1,53 @@
+@import "./custom_colors";
+
+.homeContainer {
+    background-color: $custom-grey-darker;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $custom-grey;
+        font-family: 'karma';
+
+        h1 {
+            font-size: 70px;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            margin-top: 5px;
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+
+    .buttonHome {
+        font-family: 'karma';
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: none;
+        color: $custom-grey;
+        background-color: $custom-grey-darker;
+        padding-top: 4px;
+        padding-bottom: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 25px;
+        border-color: $custom-grey;
+        border-style: solid;
+        border-width: 2px;
+        cursor: pointer;
+    }
+    .buttonHome:hover{
+        background-color: $custom-grey-dark;
+        border-color: $custom-grey-darker;
+    }
+}
