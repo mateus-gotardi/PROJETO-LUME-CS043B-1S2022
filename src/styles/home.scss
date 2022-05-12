@@ -9,6 +9,7 @@
     justify-content: center;
     gap: 80px;
     align-items: center;
+
     .title {
         display: flex;
         flex-direction: column;
@@ -46,8 +47,24 @@
         border-width: 2px;
         cursor: pointer;
     }
-    .buttonHome:hover{
+
+    .buttonHome:hover {
         background-color: $custom-grey-dark;
         border-color: $custom-grey-darker;
+    }
+}
+
+@media (max-width: 800px) {
+    .homeContainer {
+        width: 100%;
+
+        .title {
+            h1 {
+                font-size: 36px;
+            }
+            h2{
+                font-size: 25px;
+            }
+        }
     }
 }

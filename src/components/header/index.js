@@ -1,18 +1,14 @@
-import React, { useState } from "react";
-import { BiSearch } from 'react-icons/bi'
+import React from "react";
 import '../../styles/header.scss'
 import Timer from "../timer";
+import Searchbox from "./searchbox";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-
-    const [search, setSearch] = useState('')
     return (
         <div className="header">
-            <Timer/>
-            <div className="searchbox">
-                <BiSearch className="icon" />
-                <input className="input" type='text' name='search' value={search} onChange={e => { setSearch(e.target.value) }} />
-            </div>
+            <Link to='/' className="timerlink"><Timer/></Link>
+            <Searchbox/>
         </div>
     )
 }

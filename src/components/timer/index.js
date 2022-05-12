@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { SearchContext } from "../../providers/search";
 
 const Timer = () => {
     const [minute, setMinute] = useState(4)
     const [second, setSecond] = useState(0)
+    const {setSearchList}=React.useContext(SearchContext)
     const navigate = useNavigate();
     useEffect(()=>{
-        sessionStorage.clear()
+        setSearchList({})
     },[])
     useEffect(() => {
         setTimeout(() => {
@@ -18,7 +20,7 @@ const Timer = () => {
                     setMinute(minute - 1)
                 }
             }else{
-                sessionStorage.clear()
+                setSearchList({})
                 setMinute(4)
                 setSecond(0)
                 navigate('/');

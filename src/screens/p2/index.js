@@ -2,10 +2,12 @@ import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import uzz18 from '../../assets/images/uzz18.png'
 import '../../styles/pages.scss'
+import { SearchContext } from "../../providers/search";
 
 const P2 = () => {
+    const {setSearchList, searchList}=React.useContext(SearchContext)
     useEffect(() => {
-        sessionStorage.setItem('dica1',Date.now())
+        setSearchList({...searchList,rj:'ok'})
       }, []);
     return (
         <div className="general">
@@ -16,7 +18,7 @@ const P2 = () => {
                         comprado em 2006 pela polícia federal<br />
                         mais de 1,859 milhão
                         <br /><br />
-                        já foram usadas na chacina em são paulo em 2015, com 18 mortos.
+                        já foram usadas na <Link to='/p3' className="link">chacina</Link> em são paulo em 2015, com 18 mortos.
                     </p>
 
                 </div>
