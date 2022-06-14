@@ -1,45 +1,126 @@
 @import "./custom_colors";
 
-.container{
+
+.general {
+    display:contents;
+    height: 100%;
+    width: 100vw;
+    margin-bottom: 50px;
+}
+.container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-.box{
-    font-family: 'karma';
-    font-size: 22px;
-    font-weight: 400;
-    color: $custom-grey-darker;
+.mapContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 90px);
+    width: 100vw;
+    position: absolute;
+    margin-top: 90px;
+    top: 0;
+    overflow: hidden;
+}
+.mapGeneral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc( 100vh - 90px);
+    overflow: hidden;
+}
+.height100{
+    height: calc( 100vh - 180px);
+}
+.text-center{
+    text-align: center;
+}
+.box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:flex-start;
+    align-items: flex-start;
     width: 330px;
-    height: 350px;
+    height: auto;
 }
-.link{
+
+.noImageBox {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .first {
+        align-self: flex-start;
+        width: 40vw;
+        text-align: left;
+    }
+
+    .second {
+        width: 40vw;
+        align-self: flex-end;
+        text-align: right;
+    }
+
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.hoverable {
+    opacity: 0;
+}
+
+.hoverable:hover {
+    opacity: 100;
+}
+
+.link {
     text-decoration: none;
-    border-style:dashed;
-    border-width: 1px;
-    border-color: $custom-grey-dark;
     color: $custom-grey-darker;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 0px;
-    margin: 0px;
 }
-.image{
+
+.mapItem {
+    font-size: 25px;
+}
+
+.mapItensContainer {
+    width: 40vw;
+    height: 30vh;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.map {
+    height: auto;
+    width: 60vw;
+}
+
+.image {
     height: 350px;
+    margin-bottom: 20px;
 }
+
 .button {
-    margin-left: 350px;
-    font-family: 'karma';
     font-size: 20px;
     font-weight: 300;
     text-decoration: none;
@@ -54,45 +135,128 @@
     border-style: solid;
     border-width: 2px;
     cursor: pointer;
+    align-self: flex-start;
 }
-.button:hover{
+
+.button:hover {
     background-color: $custom-grey-dark;
     border-color: $custom-grey-darker;
 }
-.black{
+
+.black {
     background-color: $custom-grey-darker;
 }
-.hidden{
+
+.hidden {
     opacity: 0%;
     cursor: pointer;
 }
-#rj{
+
+.info {
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    color: $custom-grey-darker;
+}
+
+#rj {
     width: 330px;
     height: 350px;
     align-items: flex-end;
     justify-content: flex-end;
 }
 
+.footer {
+    margin-top: 30px;
+    width: auto;
+    display: flex;
+    padding-left: 20%;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
 @media (max-width: 800px) {
     .container {
-      flex-direction: column;
-      margin-top:0px;
-      padding-left: 0%;
-      padding-right: 0%;
+        flex-direction: column;
+        padding-left: 0%;
+        padding-right: 0%;
     }
-    .box{
+
+    .row {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .box {
         height: fit-content;
         margin-bottom: 10px;
     }
-    .button{
-        margin-left: 40px;
-    }
-    .imgcontainer{
+
+    .imgcontainer {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .image{
-        width: 100% ;
-        height:auto;
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
-  }
+
+    .map {
+        width: 85vw;
+    }
+
+    .mapItensContainer {
+        width: 85vw;
+        height: 85vh
+    }
+
+    .mapItem {
+        font-size: 20px;
+    }
+
+    .hoverable {
+        opacity: 100;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+
+    .link {
+        color: $custom-grey-dark;
+    }
+
+    .noImageBox {
+        height: fit-content;
+        width: 95vw;
+        align-items: center;
+
+        .first,
+        .second {
+            align-self: center;
+            width: 90vw;
+        }
+    }
+
+    .footer {
+        justify-content: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-height:530px) {
+    .container {
+        padding-top: 200px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .container {
+        margin-top: 90px;
+    }
+}

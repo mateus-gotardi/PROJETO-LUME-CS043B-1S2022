@@ -3,12 +3,17 @@ import { useNavigate } from "react-router-dom";
 import { SearchContext } from "../../providers/search";
 
 const Timer = () => {
-    const [minute, setMinute] = useState(4)
+    const [minute, setMinute] = useState(10)
     const [second, setSecond] = useState(0)
     const {setSearchList}=React.useContext(SearchContext)
     const navigate = useNavigate();
     useEffect(()=>{
-        setSearchList({})
+        setSearchList({
+            dificuldades: '', complexidade: '',
+            resposta: '', delegados: '', silencio: '', sigilo: '', tempo: '', arquivo: '',
+            profissional: '', milicias: '', culpados: '', marielle: '', prova: '', lume: '',
+            câmeras: '', assassinato: '', quem: '', arma: ''
+        })
     },[])
     useEffect(() => {
         setTimeout(() => {
@@ -20,10 +25,10 @@ const Timer = () => {
                     setMinute(minute - 1)
                 }
             }else{
-                setSearchList({})
+                setSearchList([])
                 setMinute(4)
                 setSecond(0)
-                navigate('/');
+                navigate('/home');
             }
         }, 1000);
     });

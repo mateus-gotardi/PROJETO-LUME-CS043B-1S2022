@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 80px;
+    gap: 5vh;
     align-items: center;
 
     .title {
@@ -15,7 +15,7 @@
         flex-direction: column;
         align-items: center;
         color: $custom-grey;
-        font-family: 'karma';
+
 
         h1 {
             font-size: 70px;
@@ -24,14 +24,16 @@
         }
 
         h2 {
+            padding: 0 4vw 0 4vw ;
             margin-top: 5px;
             font-size: 30px;
             font-weight: 300;
+            text-align: center;
         }
     }
 
     .buttonHome {
-        font-family: 'karma';
+
         font-size: 20px;
         font-weight: 300;
         text-decoration: none;
@@ -56,7 +58,6 @@
 
 @media (max-width: 800px) {
     .homeContainer {
-        width: 100%;
 
         .title {
             h1 {

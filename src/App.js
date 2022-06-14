@@ -1,30 +1,56 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import Home from "./screens/home";
-import P1 from "./screens/p1";
-import P2 from "./screens/p2";
-import P3 from "./screens/p3";
-import P4 from "./screens/p4";
-import P5 from "./screens/p5";
-import P6 from "./screens/p6";
+import Inicial from "./screens/Inicial";
+import Tiros from "./screens/tiros";
 import Header from "./components/header";
-import { SearchContext } from "./providers/search";
-
+import NotFound from "./screens/notFound";
+import Crime from "./screens/crime";
+import Arma from "./screens/arma";
+import Bombeiro from "./screens/bombeiro";
+import Fragilidade from "./screens/fragilidade";
+import Carro from "./screens/carro";
+import Cameras from "./screens/cameras";
+import Placas from "./screens/placas";
+import Local from "./screens/local";
+import Seguindo from "./screens/seguindo";
+import Rastreamento from "./screens/rastreamento";
+import Execucao from "./screens/execucao";
+import Negro from "./screens/negro";
+import Silenciador from "./screens/silenciador";
 
 function App() {
-  const search=React.useContext(SearchContext)
-  console.log(search)
+  const [isHome, setIsHome] = useState(false)
+  const [bcg, setBcg]= useState('#fff')
+  function Element() {
+    const screens = {
+      home: <Home />, inicial: <Inicial />, crime: <Crime />,
+      arma: <Arma />, tiros: <Tiros />, bombeiro: <Bombeiro />, fragilidade: <Fragilidade />,
+      carro: <Carro/>, cameras: <Cameras/>, placas: <Placas/>, local: <Local/>, seguindo:<Seguindo/>,
+      rastreamento: <Rastreamento/>, execucao: <Execucao/>, negro: <Negro/>, silenciador: <Silenciador/>
+    }
+    let { id } = useParams();
+    if (id === 'home') {
+      setIsHome(true)
+    } else {
+      setIsHome(false)
+    }
+    if(id==='silenciador'){
+      setBcg('#FFDE6A')
+    }else{
+      setBcg('#fff')
+    }
+    return (screens[id])
+  }
+
+
   return (
     <BrowserRouter>
-    <Header/>
+      <style>{`body { background-color: ${bcg}; }`}</style>
+      {isHome ? <></> : <Header />}
       <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/p1' element={<P1 />} />
-        <Route exact path='/p2' element={<P2 />} />
-        <Route exact path='/p3' element={<P3 />} />
-        <Route exact path='/p4' element={<P4 />} />
-        <Route exact path='/p5' element={<P5 />} />
-        <Route exact path='/p6' element={<P6 />} />
+        <Route exact path='/:id' element={<Element />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

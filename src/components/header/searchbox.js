@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BiSearch } from 'react-icons/bi'
 import { SearchContext } from "../../providers/search";
 
 const Searchbox = () => {
     const [search, setSearch] = useState('')
-    const {setSearchList, searchList}=React.useContext(SearchContext)
+    const {searchList, setSearchList}=React.useContext(SearchContext)
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (search.toLowerCase() == 'ronnie' || search.toLowerCase() == 'lessa') {
+        if (search.toLowerCase() === 'ronnie' || search.toLowerCase() === 'lessa') {
             setSearchList({...searchList,lessa:'ok'})
+            setSearch('')
         }
     }
     return (

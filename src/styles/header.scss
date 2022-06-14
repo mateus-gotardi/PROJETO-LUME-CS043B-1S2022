@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    z-index: 1000;
 }
 
 .timerlink {
@@ -25,18 +26,22 @@
     padding-left: 5px;
     padding-top: 5px;
 
+    form{
+        width: 96%;
+    }
+
     .input {
         position: relative;
         top: -4px;
-        font-family: 'karma';
         font-size: 15px;
         font-weight: 400;
-        width: 100%;
+        width: 95%;
         margin-left: 5px;
         border: none;
         border-radius: 50px;
         height: 20px;
         margin-bottom: 5px;
+        background-color: transparent;
     }
 
     .input:focus {
@@ -47,7 +52,6 @@
 }
 
 .timer {
-    font-family: 'karma';
     font-size: 25px;
     font-weight: 300;
 }
