@@ -1,18 +1,19 @@
 import { Link } from 'react-router-dom'
 import '../../styles/pages.scss'
-import BackButton from '../../components/backButton'
+import BackButton from '../../components/footer'
 import React, {useEffect} from 'react'
 import { SearchContext } from '../../providers/search'
 
 const Execucao = () => {
-    const {searchList, setSearchList}=React.useContext(SearchContext)
+    const {searchList, setSearchList, progress, setProgress}=React.useContext(SearchContext)
     useEffect(()=>{
-        if (searchList.assassinato!=='ok'){
+        if (searchList.execucao!=='ok'){
+            setProgress(progress+2)
             let tempList=searchList
-            tempList.assassinato='ok'
+            tempList.execucao='ok'
             setSearchList(tempList)
         }
-    })
+    },[searchList, setSearchList, progress, setProgress])
     return (
         <div className='general'>
             <div className="container">

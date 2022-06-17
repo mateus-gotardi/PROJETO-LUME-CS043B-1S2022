@@ -1,7 +1,19 @@
-  import BackButton from '../../components/backButton'
+import React, {useEffect} from 'react'
+import { SearchContext } from '../../providers/search'
+import BackButton from '../../components/footer'
 import '../../styles/pages.scss'
 
+
 const Bombeiro = () => {
+    const {searchList, setSearchList, progress, setProgress}=React.useContext(SearchContext)
+    useEffect(()=>{
+        if (searchList.bombeiro!=='ok'){
+            setProgress(progress+2)
+            let tempList=searchList
+            tempList.bombeiro='ok'
+            setSearchList(tempList)
+        }
+    },[searchList, setSearchList, progress, setProgress])
     return (
         <div className='general'>
             <div className="container">
@@ -19,7 +31,7 @@ const Bombeiro = () => {
 
                 </div>
             </div>
-            <BackButton to='/arma' />
+            <BackButton to='/inicial' />
         </div>
     )
 }

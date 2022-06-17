@@ -1,19 +1,20 @@
 import { Link } from 'react-router-dom'
 import '../../styles/pages.scss'
 import mp5 from '../../assets/images/hk mp5.jpg'
-import BackButton from '../../components/backButton'
+import BackButton from '../../components/footer'
 import { SearchContext } from '../../providers/search'
 import React, {useEffect} from 'react'
 
 const Arma = () => {
-    const {searchList, setSearchList}=React.useContext(SearchContext)
+    const {searchList, setSearchList, progress, setProgress }=React.useContext(SearchContext)
     useEffect(()=>{
         if (searchList.arma!=='ok'){
+            setProgress(progress+2)
             let tempList=searchList
             tempList.arma='ok'
             setSearchList(tempList)
         }
-    })
+    },[searchList, setSearchList, progress, setProgress])
     return (
         <div className="general">
             <div className='container'>

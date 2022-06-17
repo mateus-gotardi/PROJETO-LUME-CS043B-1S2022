@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom'
-import BackButton from '../../components/backButton'
+import BackButton from '../../components/footer'
 import '../../styles/pages.scss'
+import React from 'react'
+
 
 const Crime = () => {
+
     return (
         <div className='general'>
             <div className="container">

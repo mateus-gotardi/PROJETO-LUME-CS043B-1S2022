@@ -2,11 +2,11 @@
 
 
 .general {
-    display:contents;
-    height: 100%;
-    width: 100vw;
-    margin-bottom: 50px;
+    display: block;
+    height: auto;
+    padding-bottom: 100px;
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -15,6 +15,27 @@
     padding-left: 10%;
     padding-right: 10%;
     box-sizing: border-box;
+    width: 100%;
+}
+
+.sideText {
+    width: 30vw;
+    margin-right: 5vw;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.printDiv {
+    width: 50vw;
+}
+
+.print {
     width: 100%;
 }
 
@@ -30,19 +51,19 @@
     top: 0;
     overflow: hidden;
 }
-.mapGeneral{
+
+.mapGeneral {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc( 100vh - 90px);
+    height: calc(100vh - 90px);
     overflow: hidden;
 }
-.height100{
-    height: calc( 100vh - 180px);
+
+.height100 {
+    height: calc(100vh - 180px);
 }
-.text-center{
-    text-align: center;
-}
+
 .box {
     display: flex;
     flex-direction: column;
@@ -58,6 +79,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
     .first {
         align-self: flex-start;
         width: 40vw;
@@ -99,14 +121,14 @@
 }
 
 .mapItensContainer {
-    width: 40vw;
-    height: 30vh;
+    width: 75vw;
+    height: auto;
     border-radius: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
+    gap: 5vw;
     flex-wrap: wrap;
 }
 
@@ -117,6 +139,7 @@
 
 .image {
     height: 350px;
+    width: auto;
     margin-bottom: 20px;
 }
 
@@ -160,6 +183,14 @@
     color: $custom-grey-darker;
 }
 
+.textCenter {
+    text-align: center;
+}
+
+.marginTop5 {
+    margin-top: 5vh;
+}
+
 #rj {
     width: 330px;
     height: 350px;
@@ -168,14 +199,22 @@
 }
 
 .footer {
-    margin-top: 30px;
-    width: auto;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
     display: flex;
-    padding-left: 20%;
+    padding-top: 15px;
     align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: 40px;
+    background-color: #fff;
+    .button{
+        margin-left: 10%;
+    }
 }
+
 
 @media (max-width: 800px) {
     .container {
@@ -211,7 +250,7 @@
 
     .mapItensContainer {
         width: 85vw;
-        height: 85vh
+        height: auto
     }
 
     .mapItem {
@@ -243,8 +282,12 @@
     }
 
     .footer {
-        justify-content: center;
-        padding-left: 0;
+        align-items: center;
+    }
+
+    .sideText {
+        width: 95vw;
+        margin-right: 0;
     }
 }
 

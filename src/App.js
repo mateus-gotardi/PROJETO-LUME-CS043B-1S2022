@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams, Navigate } from "react-router-dom";
 import Home from "./screens/home";
 import Inicial from "./screens/Inicial";
 import Tiros from "./screens/tiros";
@@ -18,35 +18,51 @@ import Rastreamento from "./screens/rastreamento";
 import Execucao from "./screens/execucao";
 import Negro from "./screens/negro";
 import Silenciador from "./screens/silenciador";
+import Investigacao from "./screens/investigacao";
+import Tempo from "./screens/tempo";
+import Delegado from "./screens/delegado";
+import Arquivo from "./screens/arquivo";
+import Interferencia from "./screens/interferencia";
+import Erro from "./screens/erro";
+import Imagens from "./screens/imagens";
+import Testemunho from "./screens/testemunho";
+import Metodos from "./screens/metodos";
+import Confundir from "./screens/confundir";
+import Alvo from "./screens/alvo";
+import Lume from "./screens/lume";
+import Passo from "./screens/passo";
+import Sigilo from "./screens/sigilo";
 
 function App() {
   const [isHome, setIsHome] = useState(false)
-  const [bcg, setBcg]= useState('#fff')
   function Element() {
     const screens = {
       home: <Home />, inicial: <Inicial />, crime: <Crime />,
       arma: <Arma />, tiros: <Tiros />, bombeiro: <Bombeiro />, fragilidade: <Fragilidade />,
-      carro: <Carro/>, cameras: <Cameras/>, placas: <Placas/>, local: <Local/>, seguindo:<Seguindo/>,
-      rastreamento: <Rastreamento/>, execucao: <Execucao/>, negro: <Negro/>, silenciador: <Silenciador/>
+      carro: <Carro />, cameras: <Cameras />, placas: <Placas />, local: <Local />, seguindo: <Seguindo />,
+      rastreamento: <Rastreamento />, execucao: <Execucao />, negro: <Negro />, silenciador: <Silenciador />,
+      investigacao: <Investigacao />, tempo: <Tempo />, delegado: <Delegado />, arquivo: <Arquivo />,
+      interferencia: <Interferencia />, erro: <Erro />, imagens: <Imagens />, testemunho: <Testemunho />,
+      metodos: <Metodos />, confundir: <Confundir />, alvo: <Alvo />, lume: <Lume/>, passo:<Passo/>,
+      sigilo: <Sigilo/> 
     }
+    let keys = Object.keys(screens)
     let { id } = useParams();
     if (id === 'home') {
       setIsHome(true)
     } else {
       setIsHome(false)
     }
-    if(id==='silenciador'){
-      setBcg('#FFDE6A')
+    if (keys.indexOf(id)!==-1){
+      return (screens[id])
     }else{
-      setBcg('#fff')
+      return <Navigate to="/inicial" />
     }
-    return (screens[id])
   }
-
 
   return (
     <BrowserRouter>
-      <style>{`body { background-color: ${bcg}; }`}</style>
+
       {isHome ? <></> : <Header />}
       <Routes>
         <Route exact path='/:id' element={<Element />} />

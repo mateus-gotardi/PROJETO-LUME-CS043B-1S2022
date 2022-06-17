@@ -1,27 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BiSearch } from 'react-icons/bi'
 import { SearchContext } from "../../providers/search";
+import { Navigate } from "react-router-dom";
 
 const Searchbox = () => {
     const [search, setSearch] = useState('')
-    const {searchList, setSearchList}=React.useContext(SearchContext)
+    const [redirect, setRedirect] = useState(false)
+    const { searchList } = React.useContext(SearchContext)
+    const keys = Object.keys(searchList)
+
+    function remover_acentos_espaco(str) {
+        return str.normalize("NFD").replace(/[^a-zA-Zs]/g, "").toLowerCase();
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (search.toLowerCase() === 'ronnie' || search.toLowerCase() === 'lessa') {
-            setSearchList({...searchList,lessa:'ok'})
-            setSearch('')
+        let str = remover_acentos_espaco(search)
+        if (keys.indexOf(str) !== -1) {
+            setRedirect(true)
         }
     }
-    return (
-        <div className="searchbox">
-            <BiSearch className="icon" />
-            <form onSubmit={handleSubmit}>
-                <input className="input" type='text' name='search' value={search}
-                    onChange={e => { setSearch(e.target.value) }}  />
-            </form>
+    useEffect(() => {
+        setTimeout(() => {
+            if(redirect){
+                setRedirect(false)
+                setSearch('')
+            }
+        }, 1);
+    },[redirect]);
 
-        </div>
-    )
+    if (redirect) {
+        let str = remover_acentos_espaco(search)
+        return <Navigate to={'/' + str} />
+    } else {
+        return (
+            <div className="searchbox">
+                <BiSearch className="icon" />
+                <form onSubmit={handleSubmit}>
+                    <input className="input" type='text' name='search' value={search}
+                        onChange={e => { setSearch(e.target.value) }} />
+                </form>
+
+            </div>
+        )
+    }
 }
 export default Searchbox

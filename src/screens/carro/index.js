@@ -1,9 +1,20 @@
 import { Link } from 'react-router-dom'
 import '../../styles/pages.scss'
 import cobalt from '../../assets/images/cobalt-clonado.webp'
-import BackButton from '../../components/backButton'
+import BackButton from '../../components/footer'
+import React, {useEffect} from 'react'
+import { SearchContext } from '../../providers/search'
 
 const Carro = () => {
+    const {searchList, setSearchList, progress, setProgress}=React.useContext(SearchContext)
+    useEffect(()=>{
+        if (searchList.carro!=='ok'){
+            setProgress(progress+2)
+            let tempList=searchList
+            tempList.carro='ok'
+            setSearchList(tempList)
+        }
+    },[searchList, setSearchList, progress, setProgress])
     return (
         <div className="general">
             <div className='container'>

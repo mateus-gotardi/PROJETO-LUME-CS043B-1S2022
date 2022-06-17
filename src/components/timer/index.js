@@ -9,12 +9,12 @@ const Timer = () => {
     const navigate = useNavigate();
     useEffect(()=>{
         setSearchList({
-            dificuldades: '', complexidade: '',
-            resposta: '', delegados: '', silencio: '', sigilo: '', tempo: '', arquivo: '',
-            profissional: '', milicias: '', culpados: '', marielle: '', prova: '', lume: '',
-            câmeras: '', assassinato: '', quem: '', arma: ''
+            alvo: '', arma: '', arquivo: '', bombeiro: '', cameras: '', carro: '', confundir: '',
+            crime: '', delegado: '', erro: '', execucao: '', fragilidade: '', imagens: '', interferencia: '',
+            investigacao: '', local: '', lume: '', metodos: '', negro: '', passo: '', placas: '', rastreamento: '',
+            seguindo: '', sigilo: '', silenciador: '', tempo: '', testemunho: '', tiros: '',
         })
-    },[])
+    },[setSearchList])
     useEffect(() => {
         setTimeout(() => {
             if (minute >= 0) {
@@ -25,8 +25,13 @@ const Timer = () => {
                     setMinute(minute - 1)
                 }
             }else{
-                setSearchList([])
-                setMinute(4)
+                setSearchList({
+                    alvo: '', arma: '', arquivo: '', bombeiro: '', cameras: '', carro: '', confundir: '',
+                    crime: '', delegado: '', erro: '', execucao: '', fragilidade: '', imagens: '', interferencia: '',
+                    investigacao: '', local: '', lume: '', metodos: '', negro: '', passo: '', placas: '', rastreamento: '',
+                    seguindo: '', sigilo: '', silenciador: '', tempo: '', testemunho: '', tiros: '',
+                })
+                setMinute(10)
                 setSecond(0)
                 navigate('/home');
             }

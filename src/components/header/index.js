@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import '../../styles/header.scss'
 import Timer from "../timer";
 import Searchbox from "./searchbox";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
