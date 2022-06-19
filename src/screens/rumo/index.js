@@ -46,7 +46,7 @@ const Rumo = () => {
                     </div>
                 </div>
             </div>
-            <BackButton to='/envolvimento ' done='84' color='#C94545' />
+            <BackButton to='/politicos ' done='84' color='#C94545' />
         </div>
     )
 }
