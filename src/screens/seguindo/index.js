@@ -5,15 +5,14 @@ import React, {useEffect} from 'react'
 import { SearchContext } from '../../providers/search'
 
 const Seguindo = () => {
-    const {searchList, setSearchList, progress, setProgress}=React.useContext(SearchContext)
+    const {searchList, setSearchList}=React.useContext(SearchContext)
     useEffect(()=>{
         if (searchList.seguindo!=='ok'){
-            setProgress(progress+2)
             let tempList=searchList
             tempList.seguindo='ok'
             setSearchList(tempList)
         }
-    },[searchList, setSearchList, progress, setProgress])
+    },[searchList, setSearchList])
     return (
         <div className='general'>
             <div className="container">
@@ -32,7 +31,7 @@ const Seguindo = () => {
                  informação de alguém{' '}<span className='black'>||||||||||||||||||||</span>{' '}outro detalhe curioso foi levado em consideração pela polícia. Ele diz respeito ao carro usado no dia do crime - um Cobalt com placa clonada. A partir do levantamento de imagens de câmeras de trânsito foi possível detectar indícios de que em 1º, 2 e 7 de fevereiro de 2018, o veículo já havia realizado o mesmo trajeto feito no dia do crime. O que levanta suspeitas sobre o monitoramento{' '}<span className='black'>||||||||||||||</span>{' '}ou um ensaio do que estaria por vir”
                 </p>
             </div>
-            <BackButton to='/carro' />
+            <BackButton to='/carro' color='#F2CA39' done='72' />
         </div>
     )
 }

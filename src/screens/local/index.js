@@ -5,15 +5,14 @@ import React, {useEffect} from 'react'
 import { SearchContext } from '../../providers/search'
 
 const Local = () => {
-    const {searchList, setSearchList, progress, setProgress}=React.useContext(SearchContext)
+    const {searchList, setSearchList}=React.useContext(SearchContext)
     useEffect(()=>{
         if (searchList.local!=='ok'){
-            setProgress(progress+2)
             let tempList=searchList
             tempList.local='ok'
             setSearchList(tempList)
         }
-    },[searchList, setSearchList, progress, setProgress])
+    },[searchList, setSearchList])
     return (
         <div className='general'>
             <div className="container">
@@ -32,7 +31,7 @@ const Local = () => {
                     </p>
                 </div>
             </div>
-            <BackButton to='/carro' />
+            <BackButton to='/carro' color='#F2CA39' done='72' />
         </div>
     )
 }

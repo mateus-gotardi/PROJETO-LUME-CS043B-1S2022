@@ -5,15 +5,14 @@ import '../../styles/pages.scss'
 
 
 const Bombeiro = () => {
-    const {searchList, setSearchList, progress, setProgress}=React.useContext(SearchContext)
+    const {searchList, setSearchList}=React.useContext(SearchContext)
     useEffect(()=>{
         if (searchList.bombeiro!=='ok'){
-            setProgress(progress+2)
             let tempList=searchList
             tempList.bombeiro='ok'
             setSearchList(tempList)
         }
-    },[searchList, setSearchList, progress, setProgress])
+    },[searchList, setSearchList])
     return (
         <div className='general'>
             <div className="container">
@@ -31,7 +30,7 @@ const Bombeiro = () => {
 
                 </div>
             </div>
-            <BackButton to='/inicial' />
+            <BackButton to='/inicial' color='#F2CA39' done='36' />
         </div>
     )
 }

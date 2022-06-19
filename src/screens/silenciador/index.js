@@ -5,15 +5,14 @@ import React, {useEffect} from 'react'
 import { SearchContext } from '../../providers/search'
 
 const Silenciador = () => {
-    const {searchList, setSearchList, progress, setProgress}=React.useContext(SearchContext)
+    const {searchList, setSearchList}=React.useContext(SearchContext)
     useEffect(()=>{
-        if (searchList.investigacao!=='ok'){
-            setProgress(progress+2)
+        if (searchList.silenciador!=='ok'){
             let tempList=searchList
-            tempList.investigacao='ok'
+            tempList.silenciador='ok'
             setSearchList(tempList)
         }
-    },[searchList, setSearchList, progress, setProgress])
+    },[searchList, setSearchList])
     return (
         <div className='general'>
                   <style>{`body { background-color: #F2CA39; }`}</style>
@@ -30,7 +29,7 @@ const Silenciador = () => {
                     </p>
                 </div>
             </div>
-            <BackButton to='/execucao'/>
+            <BackButton to='/execucao' background='#F2CA39' color='#F2CA39' done='100'/>
         </div>
     )
 }

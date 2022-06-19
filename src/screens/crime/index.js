@@ -18,7 +18,7 @@ const Crime = () => {
                         partiram os tiros <span className="black">||||||||||||</span> foram encontrados”</p>
                 </div>
             </div>
-            <BackButton to='/inicial' />
+            <BackButton to='/inicial' color='#F2CA39' done='12' />
         </div>
     )
 }

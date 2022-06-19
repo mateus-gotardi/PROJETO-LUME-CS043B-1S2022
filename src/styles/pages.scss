@@ -17,6 +17,20 @@
     box-sizing: border-box;
     width: 100%;
 }
+.creditsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.logo{
+    height:16vh;
+    margin-left: 5vw;
+}
 
 .sideText {
     width: 30vw;
@@ -37,6 +51,10 @@
 
 .print {
     width: 100%;
+}
+
+.bold {
+    font-weight: 800;
 }
 
 .mapContainer {
@@ -92,6 +110,45 @@
         text-align: right;
     }
 
+}
+
+.finalTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $custom-grey;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.finalInfo {
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    color: $custom-grey;
+    text-decoration: none;
+}
+
+.subTitle{
+    width: 100%;
+    color: $custom-grey-darker;
+    font-size: 40px;
+    font-weight: 450;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.topic{
+    width: 100%;
+    color: $custom-grey-darker;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.creditItem{
+    width: 100%;
 }
 
 .noPadding {
@@ -183,6 +240,7 @@
     color: $custom-grey-darker;
 }
 
+
 .textCenter {
     text-align: center;
 }
@@ -210,11 +268,30 @@
     flex-direction: column;
     padding-bottom: 40px;
     background-color: #fff;
-    .button{
+
+    .button {
         margin-left: 10%;
     }
 }
 
+.printsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+
+    .printLeft {
+        align-self: flex-start;
+    }
+
+    .printRight {
+        align-self: flex-end;
+    }
+
+    .printRow {
+        width: 50%;
+    }
+}
 
 @media (max-width: 800px) {
     .container {
@@ -222,7 +299,24 @@
         padding-left: 0%;
         padding-right: 0%;
     }
-
+    .creditsContainer{
+        flex-direction: column;
+        .logos{
+            padding-top: 20px;
+        }
+    }
+    .finalTitle{
+        font-size: 40px;
+    }
+    .finalInfo{
+        font-size: 18px;
+    }
+    .subTitle{
+        font-size: 30px;
+    }
+    .topic{
+        font-size: 23px;
+    }
     .row {
         flex-direction: column;
         width: 90vw;

@@ -4,15 +4,14 @@ import React, {useEffect} from 'react'
 import { SearchContext } from '../../providers/search'
 
 const Placas = () => { 
-    const {searchList, setSearchList, progress, setProgress}=React.useContext(SearchContext)
+    const {searchList, setSearchList}=React.useContext(SearchContext)
     useEffect(()=>{
         if (searchList.placas!=='ok'){
-            setProgress(progress+2)
             let tempList=searchList
             tempList.placas='ok'
             setSearchList(tempList)
         }
-    },[searchList, setSearchList, progress, setProgress])
+    },[searchList, setSearchList])
     return (
         <div className='general'>
             <div className="container height100">
@@ -24,7 +23,7 @@ const Placas = () => {
                     </p>
                 </div>
             </div>
-            <BackButton to='/inicial' />
+            <BackButton to='/inicial' color='#F2CA39' done='72' />
         </div>
     )
 }

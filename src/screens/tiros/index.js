@@ -6,15 +6,14 @@ import BackButton from "../../components/footer";
 import { SearchContext } from '../../providers/search'
 
 const Tiros = () => {
-    const { searchList, setSearchList, progress, setProgress } = React.useContext(SearchContext)
+    const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         if (searchList.tiros !== 'ok') {
-            setProgress(progress+2)
             let tempList = searchList
             tempList.tiros = 'ok'
             setSearchList(tempList)
         }
-    }, [searchList, setSearchList, progress, setProgress])
+    }, [searchList, setSearchList])
     return (
         <Fragment>
             <div className="general">
@@ -36,8 +35,7 @@ const Tiros = () => {
                     </div>
                 </div>
             </div>
-            <BackButton to='/arma' />
-
+            <BackButton to='/arma' color='#F2CA39' done='36' />
         </Fragment>
 
     )

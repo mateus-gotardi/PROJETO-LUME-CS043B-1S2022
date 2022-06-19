@@ -5,15 +5,14 @@ import React, {useEffect} from 'react'
 import { SearchContext } from '../../providers/search'
 
 const Fragilidade = () => {
-    const {searchList, setSearchList, progress, setProgress}=React.useContext(SearchContext)
+    const {searchList, setSearchList}=React.useContext(SearchContext)
     useEffect(()=>{
         if (searchList.fragilidade!=='ok'){
-            setProgress(progress+2)
             let tempList=searchList
             tempList.fragilidade='ok'
             setSearchList(tempList)
         }
-    },[searchList, setSearchList, progress, setProgress])
+    },[searchList, setSearchList])
     return (
         <div className='general'>
             <div className="container">
@@ -35,7 +34,7 @@ const Fragilidade = () => {
 
                 </div>
             </div>
-            <BackButton to='/tiros' />
+            <BackButton to='/tiros' color='#F2CA39' done='48' />
         </div>
     )
 }

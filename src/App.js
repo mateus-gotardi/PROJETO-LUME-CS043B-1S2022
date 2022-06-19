@@ -32,6 +32,21 @@ import Alvo from "./screens/alvo";
 import Lume from "./screens/lume";
 import Passo from "./screens/passo";
 import Sigilo from "./screens/sigilo";
+import Quem from "./screens/quem";
+import Milicia from "./screens/milicia";
+import Escritorio from "./screens/escritorio";
+import Familia from "./screens/familia";
+import Poder from "./screens/poder";
+import Apoio from "./screens/apoio";
+import Planalto from "./screens/planalto";
+import Constituido from "./screens/constituido";
+import Envolvimento from "./screens/envolvimento";
+import Politicos from "./screens/politicos";
+import Rumo from "./screens/rumo";
+import Ela from "./screens/ela";
+import Final from "./screens/final";
+import Fontes from "./screens/fontes";
+import Creditos from "./screens/creditos";
 
 function App() {
   const [isHome, setIsHome] = useState(false)
@@ -44,11 +59,14 @@ function App() {
       investigacao: <Investigacao />, tempo: <Tempo />, delegado: <Delegado />, arquivo: <Arquivo />,
       interferencia: <Interferencia />, erro: <Erro />, imagens: <Imagens />, testemunho: <Testemunho />,
       metodos: <Metodos />, confundir: <Confundir />, alvo: <Alvo />, lume: <Lume/>, passo:<Passo/>,
-      sigilo: <Sigilo/> 
+      sigilo: <Sigilo/>, quem: <Quem/>, milicia: <Milicia/>, escritorio: <Escritorio/>, familia: <Familia/>,
+      poder: <Poder/>, apoio: <Apoio/>, planalto: <Planalto/>, constituido: <Constituido/>, 
+      envolvimento: <Envolvimento/>, politicos: <Politicos/>, rumo: <Rumo/>, ela: <Ela/>,
+      finalcs043b1s2022:<Final/>, fontescs043b1s2022: <Fontes/>, creditoscs043b1s2022: <Creditos/>
     }
     let keys = Object.keys(screens)
     let { id } = useParams();
-    if (id === 'home') {
+    if (id === 'home'||id==='finalcs043b1s2022'||id==='fontescs043b1s2022'||id==='creditoscs043b1s2022') {
       setIsHome(true)
     } else {
       setIsHome(false)

@@ -5,15 +5,14 @@ import { SearchContext } from '../../providers/search'
 import { Link } from 'react-router-dom'
 
 const Sigilo = () => {
-    const { searchList, setSearchList, progress, setProgress } = React.useContext(SearchContext)
+    const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         if (searchList.sigilo !== 'ok') {
-            setProgress(progress+2)
             let tempList = searchList
             tempList.sigilo = 'ok'
             setSearchList(tempList)
         }
-    }, [searchList, setSearchList, progress, setProgress])
+    }, [searchList, setSearchList])
     return (
         <div className='general'>
             <style>{`body { background-color: #66CCFF; }`}</style>
@@ -34,7 +33,7 @@ const Sigilo = () => {
                 </div>
             </div>
 
-            <BackButton to='/passo' />
+            <BackButton to='/passo' color='#F2CA39' done='100' background='#F2CA39'/>
         </div>
     )
 }

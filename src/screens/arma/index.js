@@ -6,15 +6,14 @@ import { SearchContext } from '../../providers/search'
 import React, {useEffect} from 'react'
 
 const Arma = () => {
-    const {searchList, setSearchList, progress, setProgress }=React.useContext(SearchContext)
+    const {searchList, setSearchList }=React.useContext(SearchContext)
     useEffect(()=>{
         if (searchList.arma!=='ok'){
-            setProgress(progress+2)
             let tempList=searchList
             tempList.arma='ok'
             setSearchList(tempList)
         }
-    },[searchList, setSearchList, progress, setProgress])
+    },[searchList, setSearchList])
     return (
         <div className="general">
             <div className='container'>
@@ -35,7 +34,7 @@ const Arma = () => {
                 </div>
             </div>
 
-            <BackButton to='/crime' />
+            <BackButton to='/crime' color='#F2CA39' done='24' />
         </div>
     )
 }

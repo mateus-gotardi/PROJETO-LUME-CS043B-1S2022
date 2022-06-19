@@ -5,15 +5,14 @@ import React, {useEffect} from 'react'
 import { SearchContext } from '../../providers/search'
 
 const Execucao = () => {
-    const {searchList, setSearchList, progress, setProgress}=React.useContext(SearchContext)
+    const {searchList, setSearchList}=React.useContext(SearchContext)
     useEffect(()=>{
         if (searchList.execucao!=='ok'){
-            setProgress(progress+2)
             let tempList=searchList
             tempList.execucao='ok'
             setSearchList(tempList)
         }
-    },[searchList, setSearchList, progress, setProgress])
+    },[searchList, setSearchList])
     return (
         <div className='general'>
             <div className="container">
@@ -34,7 +33,7 @@ const Execucao = () => {
                     
                 </div>
             </div>
-            <BackButton to='/local' />
+            <BackButton to='/local' color='#F2CA39' done='84' />
         </div>
     )
 }

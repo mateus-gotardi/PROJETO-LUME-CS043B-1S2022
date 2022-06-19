@@ -1,11 +1,12 @@
 import React, {useState} from "react";
 import '../../styles/progressBar.scss'
 
-const Progress = ({ done }) => {
+const Progress = ({ done, color }) => {
     const [style, setStyle] = useState({});
 
     setTimeout(() => {
         const newStyle = {
+            background: color,
             width: `${done}%`
         }
 

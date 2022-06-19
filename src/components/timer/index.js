@@ -12,7 +12,9 @@ const Timer = () => {
             alvo: '', arma: '', arquivo: '', bombeiro: '', cameras: '', carro: '', confundir: '',
             crime: '', delegado: '', erro: '', execucao: '', fragilidade: '', imagens: '', interferencia: '',
             investigacao: '', local: '', lume: '', metodos: '', negro: '', passo: '', placas: '', rastreamento: '',
-            seguindo: '', sigilo: '', silenciador: '', tempo: '', testemunho: '', tiros: '',
+            seguindo: '', sigilo: '', silenciador: '', tempo: '', testemunho: '', tiros: '', quem: '', milicia: '',
+            escitorio: '', apoio: '', familia: '', poder: '', planalto:'', constituido:'', envolvimento:'', politicos:'',
+            rumo:'', ela:''
         })
     },[setSearchList])
     useEffect(() => {
@@ -29,7 +31,9 @@ const Timer = () => {
                     alvo: '', arma: '', arquivo: '', bombeiro: '', cameras: '', carro: '', confundir: '',
                     crime: '', delegado: '', erro: '', execucao: '', fragilidade: '', imagens: '', interferencia: '',
                     investigacao: '', local: '', lume: '', metodos: '', negro: '', passo: '', placas: '', rastreamento: '',
-                    seguindo: '', sigilo: '', silenciador: '', tempo: '', testemunho: '', tiros: '',
+                    seguindo: '', sigilo: '', silenciador: '', tempo: '', testemunho: '', tiros: '', quem: '', milicia: '',
+                    escitorio: '', apoio: '', familia: '', poder: '', planalto:'', constituido:'', envolvimento:'', politicos:'',
+                    rumo:'', ela:''
                 })
                 setMinute(10)
                 setSecond(0)
