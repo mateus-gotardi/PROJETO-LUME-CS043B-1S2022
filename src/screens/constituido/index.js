@@ -12,9 +12,11 @@ const Constituido = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         imageMap('img[usemap]')
-        if (searchList.Constituido !== 'ok') {
+    }, [])
+    useEffect(() => {
+        if (searchList.constituido !== 'ok') {
             let tempList = searchList
-            tempList.Constituido = 'ok'
+            tempList.constituido = 'ok'
             setSearchList(tempList)
         }
     }, [searchList, setSearchList])

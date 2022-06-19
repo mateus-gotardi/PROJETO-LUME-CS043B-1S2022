@@ -11,6 +11,8 @@ const Envolvimento = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         imageMap('img[usemap]')
+    }, [])
+    useEffect(() => {
         if (searchList.envolvimento !== 'ok') {
             let tempList = searchList
             tempList.envolvimento = 'ok'

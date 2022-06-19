@@ -13,6 +13,8 @@ const Apoio = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         imageMap('img[usemap]')
+    }, [])
+    useEffect(() => {
         if (searchList.apoio !== 'ok') {
             let tempList = searchList
             tempList.apoio = 'ok'

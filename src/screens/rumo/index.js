@@ -13,6 +13,8 @@ const Rumo = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         imageMap('img[usemap]')
+    }, [])
+    useEffect(() => {
         if (searchList.rumo !== 'ok') {
             let tempList = searchList
             tempList.rumo = 'ok'

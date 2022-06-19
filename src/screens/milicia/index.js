@@ -12,6 +12,8 @@ const Milicia = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         imageMap('img[usemap]')
+    }, [])
+    useEffect(() => {
         if (searchList.milicia !== 'ok') {
             let tempList = searchList
             tempList.milicia = 'ok'

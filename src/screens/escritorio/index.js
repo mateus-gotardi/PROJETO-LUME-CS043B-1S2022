@@ -13,6 +13,8 @@ const Escritorio = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         imageMap('img[usemap]')
+    }, [])
+    useEffect(() => {
         if (searchList.escritorio !== 'ok') {
             let tempList = searchList
             tempList.escritorio = 'ok'

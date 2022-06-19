@@ -16,14 +16,15 @@ const Inicial = () => {
                     {keys.map((i)=>{
                         if (searchList[i]==='ok'){
                             let name = i
-                            let acentuados = {camera:'câmera',execucao:'execução',interferencia:'interferência', investigacao:'investigação', metodos:'métodos'}
+                            let acentuados = {camera:'câmera',execucao:'execução',interferencia:'interferência', investigacao:'investigação', metodos:'métodos', 
+                            milicia:'milícia', escritorio:'escritório', familia:'família', constituido:'constituído', politicos:'políticos'}
                             if (acentuados[i]!==undefined){
                                 name=acentuados[i]
                             }
                             return(
                                 <Link key={i} to={'/'+i} className={'link mapItem '+i}>{name}</Link>
                             )
-                        }
+                        }else{return(null)}
                     })}
                 </div>
             </div>

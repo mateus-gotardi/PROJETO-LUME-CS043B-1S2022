@@ -12,6 +12,8 @@ const Poder = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         imageMap('img[usemap]')
+    }, [])
+    useEffect(() => {
         if (searchList.poder !== 'ok') {
             let tempList = searchList
             tempList.poder = 'ok'

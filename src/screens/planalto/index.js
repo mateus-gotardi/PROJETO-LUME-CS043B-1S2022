@@ -6,12 +6,10 @@ import img1 from '../../assets/prints/planalto1.png'
 import img2 from '../../assets/prints/planalto2.png'
 import img3 from '../../assets/prints/planalto3.png'
 import img4 from '../../assets/prints/planalto4.png'
-import imageMap from 'image-map'
 
 const Planalto = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
-        imageMap('img[usemap]')
         if (searchList.planalto !== 'ok') {
             let tempList = searchList
             tempList.planalto = 'ok'

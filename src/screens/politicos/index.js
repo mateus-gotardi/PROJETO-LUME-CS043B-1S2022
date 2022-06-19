@@ -10,6 +10,8 @@ const Politicos = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         imageMap('img[usemap]')
+    }, [])
+    useEffect(() => {
         if (searchList.politicos !== 'ok') {
             let tempList = searchList
             tempList.politicos = 'ok'

@@ -10,6 +10,9 @@ const Quem = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
         imageMap('img[usemap]')
+    }, [])
+
+    useEffect(() => {
         if (searchList.quem !== 'ok') {
             let tempList = searchList
             tempList.quem = 'ok'
@@ -32,7 +35,7 @@ const Quem = () => {
                 </div>
             </div>
 
-            <BackButton to='/inicial' done='12'/>
+            <BackButton to='/inicial' done='12' />
         </div>
     )
 }

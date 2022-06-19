@@ -5,12 +5,11 @@ import { SearchContext } from '../../providers/search'
 import img1 from '../../assets/prints/familia1.png'
 import img2 from '../../assets/prints/familia2.png'
 import img3 from '../../assets/prints/familia3.png'
-import imageMap from 'image-map'
+
 
 const Familia = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
     useEffect(() => {
-        imageMap('img[usemap]')
         if (searchList.familia !== 'ok') {
             let tempList = searchList
             tempList.familia = 'ok'
