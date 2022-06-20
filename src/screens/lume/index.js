@@ -28,7 +28,7 @@ const Lume = () => {
                 </div>
             </div>
 
-            <BackButton to='/inicial' color='#F2CA39' done='96' background='#F2CA39'/>
+            <BackButton to='/inicial' color='#66CCFF' done='96' background='#66CCFF'/>
         </div>
     )
 }

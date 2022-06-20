@@ -22,21 +22,21 @@ const Arquivo = () => {
                     </p>
                 </div>
                 <div className='box'>
-                    <p className='info'>“Era um codec com defeito que pulava a imagem, e o ideal era ele ter passado isso para um técnico
+                    <p className='info hoverable'>“Era um codec com defeito que pulava a imagem, e o ideal era ele ter passado isso para um técnico
                         {' '}<span className='black'>||||||||||||||||||||||||</span>{' '}Foi um equívoco, um <Link className='link' to='/erro'>erro</Link> de procedimento”
                     </p>
                 </div>
             </div>
             <div className='container marginTop5'>
                 <div className='noImageBox'>
-                    <p className='info textCenter'>
+                    <p className='info textCenter hoverable'>
                         “Essa perspectiva de imagem é uma coisa que, para o investigador, é muito cara e precisa ser realizada o mais rapidamente possível,
                         porque podemos perdê-las. Divido as equipes, e elas passam a buscar imagens{' '}<span className='black'>|||||||||||||||||||||||||||||||||||||||||||||</span>{' '}
                         Foram arrecadando e analisando as imagens. Só que houve um problema nesse trabalho, que foi não perceber um equívoco de captura de codec”
                     </p>
                 </div>
             </div>
-            <BackButton to='/tempo' color='#F2CA39' done='36'/>
+            <BackButton to='/tempo' color='#66CCFF' done='36'/>
         </div>
     )
 }

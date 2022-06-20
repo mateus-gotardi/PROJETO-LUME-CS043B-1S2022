@@ -23,13 +23,13 @@ const Planalto = () => {
                     <div className='printLeft'>
                         <img className='print' alt='print1' src={img1} />
                     </div>
-                    <div className='printRight'>
+                    <div className='printRight hoverable'>
                         <img className='print' alt='print2' src={img2} />
                     </div>
-                    <div className='printLeft'>
+                    <div className='printLeft hoverable'>
                         <img className='print' alt='print3' src={img3}  />
                     </div>
-                    <div className='printRight'>
+                    <div className='printRight hoverable'>
                         <img className='print' alt='print2' src={img4} />
                     </div>
                 </div>

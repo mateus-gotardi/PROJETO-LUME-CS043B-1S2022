@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { SearchProvider } from './providers/search';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <SearchProvider>

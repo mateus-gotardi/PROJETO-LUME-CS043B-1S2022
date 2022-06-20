@@ -47,10 +47,13 @@ import Ela from "./screens/ela";
 import Final from "./screens/final";
 import Fontes from "./screens/fontes";
 import Creditos from "./screens/creditos";
+import imageMap from "image-map";
 
 function App() {
   const [isHome, setIsHome] = useState(false)
-  function Element() {
+  const  Element = ()=>{
+    
+    
     const screens = {
       home: <Home />, inicial: <Inicial />, crime: <Crime />,
       arma: <Arma />, tiros: <Tiros />, bombeiro: <Bombeiro />, fragilidade: <Fragilidade />,
@@ -71,7 +74,10 @@ function App() {
     } else {
       setIsHome(false)
     }
+    
     if (keys.indexOf(id)!==-1){
+      imageMap('img[usemap]')
+      console.log(imageMap('img[usemap]'))
       return (screens[id])
     }else{
       return <Navigate to="/inicial" />

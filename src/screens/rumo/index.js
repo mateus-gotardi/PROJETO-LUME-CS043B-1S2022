@@ -7,13 +7,9 @@ import img2 from '../../assets/prints/rumo2.png'
 import img3 from '../../assets/prints/rumo3.png'
 import img4 from '../../assets/prints/rumo4.png'
 import { Link } from 'react-router-dom'
-import imageMap from 'image-map'
 
 const Rumo = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
-    useEffect(() => {
-        imageMap('img[usemap]')
-    }, [])
     useEffect(() => {
         if (searchList.rumo !== 'ok') {
             let tempList = searchList
@@ -25,10 +21,10 @@ const Rumo = () => {
         <div className='general'>
             <div className='container'>
                 <div className='printsBox'>
-                    <div className='printLeft'>
+                    <div className='printLeft hoverable'>
                         <img className='print' alt='print3' src={img1} />
                     </div>
-                    <div className='container noPadding'>
+                    <div className='container noPadding hoverable'>
                         <div className='printRow'>
                             <img className='print' alt='print3' src={img2} />
                         </div>

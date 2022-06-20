@@ -33,7 +33,7 @@ const Sigilo = () => {
                 </div>
             </div>
 
-            <BackButton to='/passo' color='#F2CA39' done='100' background='#F2CA39'/>
+            <BackButton to='/passo' color='#66CCFF' done='100' background='#66CCFF'/>
         </div>
     )
 }

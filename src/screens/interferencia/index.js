@@ -16,20 +16,20 @@ const Interferencia = () => {
         <div className='general'>
             <div className="container">
                 <div className='noImageBox'>
-                    <p className='info first'>“Tudo bem que a sociedade também precisa e quer saber, mas precisa confiar em suas instituições.
+                    <p className='info first hoverable'>“Tudo bem que a sociedade também precisa e quer saber, mas precisa confiar em suas instituições.
                         Essa é a relação que talvez, em alguns momentos, a gente observa: a ausência de confiança”
                     </p><br />
                     <p className='info second'>“Em setembro daquele ano, a então Procuradora Geral da República, Raquel Dodge,
                         apresentou denúncia ao Superior Tribunal de Justiça (STJ) contra cinco pessoas por interferência nas investigações do assassinato”
                     </p><br />
-                    <p className='info textCenter'>“Segundo Dodge, houve 'desvirtuamento da investigação{' '}<span className='black'>|||||||||</span>{' '}
+                    <p className='info textCenter hoverable'>“Segundo Dodge, houve 'desvirtuamento da investigação{' '}<span className='black'>|||||||||</span>{' '}
                         o que acabou paralisando a investigação ou conduzindo-a para um rumo desvirtuado por mais de um ano{' '}<span className='black'>|||||||||||||</span>{' '}
-                        “Ela ainda informou que solicitou a federalização da investigação dos mandantes do crime, 
+                        Ela ainda informou que solicitou a federalização da investigação dos mandantes do crime, 
                         o que posteriormente foi negado pelo Superior Tribunal de Justiça em maio de 2020”
                     </p>
                 </div>
             </div>
-            <BackButton to='/inicial' color='#F2CA39' done='36'/>
+            <BackButton to='/inicial' color='#66CCFF' done='36'/>
         </div>
     )
 }

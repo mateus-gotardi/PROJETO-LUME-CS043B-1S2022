@@ -17,7 +17,7 @@ const Execucao = () => {
         <div className='general'>
             <div className="container">
                 <div className='noImageBox'>
-                    <p className='info first'>
+                    <p className='info first hoverable'>
                     “Segundo as primeiras informações da polícia, bandidos em um carro emparelharam ao lado do veículo
                     {' '}<span className='black'>|||||||||||||||||||||||||</span>{' '}foi atingida com pelo menos quatro
                     tiros na cabeça. A perícia encontrou nove cápsulas de tiros no local.
@@ -28,7 +28,7 @@ const Execucao = () => {
                     {' '}<span className='black'>||||||||||||||||||||||||||||</span>{' '}O veículo do assassino
                     imprensou o carro branco”
                     </p>
-                    <p  className='info first'>“O homem que deu os tiros estava sentado no banco de trás e era <Link className='link' to='/negro'>negro</Link>. Eu vi o braço
+                    <p  className='info first hoverable'>“O homem que deu os tiros estava sentado no banco de trás e era <Link className='link' to='/negro'>negro</Link>. Eu vi o braço
                      dele quando apontou a arma, que parecia ter <Link className='link' to='/silenciador'>silenciador”</Link></p>
                     
                 </div>

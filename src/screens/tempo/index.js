@@ -17,7 +17,7 @@ const Tempo = () => {
         <div className='general'>
             <div className="container">
                 <div className='noImageBox'>
-                    <p className='info first'>“Dessa vez, a conclusão sobre os assassinos levaria mais tempo.
+                    <p className='info first hoverable'>“Dessa vez, a conclusão sobre os assassinos levaria mais tempo.
                     {' '}<span className='black'>|||||||||||||</span>{' '}
                     Delegacia de Homicídios da Capital (DHC) levou mais de três anos para encaminhar ao
                      Ministério Público cerca de 1,3 mil <Link className='link' to='/arquivo '>arquivos</Link> de fotos e vídeos do caso, que completa 4 anos”
@@ -26,13 +26,13 @@ const Tempo = () => {
                     Três grupos de promotores diferentes ficaram à frente do caso no Ministério Público. 
                     Na Polícia Civil, o quinto <Link className='link' to='/delegado'>delegado</Link> assumiu há pouco mais de um mês”
                     </p><br/>
-                    <p className='info first'>“Por que demorou tanto tempo para as promotoras tomarem conhecimento da foto? Porque os
+                    <p className='info first hoverable'>“Por que demorou tanto tempo para as promotoras tomarem conhecimento da foto? Porque os
                     peritos da Polícia Civil levaram sete meses – entre março de 2019, quando o telefone foi apreendido,
                      e outubro – para conseguirem quebrar a senha do celular”
                     </p>
                 </div>
             </div>
-            <BackButton to='/investigacao' color='#F2CA39' done='24'/>
+            <BackButton to='/investigacao' color='#66CCFF' done='24'/>
         </div>
     )
 }

@@ -4,14 +4,9 @@ import React, { useEffect } from 'react'
 import { SearchContext } from '../../providers/search'
 import img1 from '../../assets/prints/quem.png'
 import { Link } from 'react-router-dom'
-import imageMap from 'image-map'
 
 const Quem = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
-    useEffect(() => {
-        imageMap('img[usemap]')
-    }, [])
-
     useEffect(() => {
         if (searchList.quem !== 'ok') {
             let tempList = searchList
@@ -35,7 +30,7 @@ const Quem = () => {
                 </div>
             </div>
 
-            <BackButton to='/inicial' done='12' />
+            <BackButton to='/inicial' done='12' color='#C94545' />
         </div>
     )
 }

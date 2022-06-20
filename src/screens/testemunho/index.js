@@ -17,11 +17,11 @@ const Testemunho = () => {
         <div className='general'>
             <div className='container'>
                 <div className='noImageBox'>
-                    <p className='info first'>
+                    <p className='info first hoverable'>
                         “Segundo o jornal O Globo, duas pessoas que estavam no local do crime foram orientadas a se afastar
                         e não foram convocadas naquele momento para prestar depoimento. Foram convocadas pela polícia após a publicação da reportagem"
                     </p><br />
-                    <p className='info second'>
+                    <p className='info second hoverable'>
                         “a repórter tentou obter alguma informação com as três pessoas em situação de rua que viu pelas redondezas.{' '}<span className='black'>||||||||||||||||||</span>
                         Depois de ouvir o que o homem em situação de rua presenciara na hora do ataque, a repórter lhe perguntou se havia mais alguém próximo naquele momento e ele então se lembrou de uma moça que atravessava a rua com um bebê no colo e mais duas crianças”
                     </p><br />
@@ -31,7 +31,7 @@ const Testemunho = () => {
                 </div>
             </div>
 
-            <BackButton to='/imagens' color='#F2CA39' done='60'/>
+            <BackButton to='/imagens' color='#66CCFF' done='60'/>
         </div>
     )
 }

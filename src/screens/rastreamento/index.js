@@ -26,7 +26,7 @@ const Rastreamento = () => {
                       Depois de se informar sobre como sumir do mapa, o policial ainda pesquisou, 
                       no dia do crime, sobre a legalidade da utilização de um equipamento chamado Jammer”
                     </p><br />
-                    <p className='info second'>
+                    <p className='info second hoverable'>
                     “O aparelho, que não tem amparo legal para seu uso, bloqueia sinais de celulares
                      e qualquer atividade feita a partir de um telefone. Pela investigação, a ideia
                       seria usar o Jammer no carro, o que impossibilitaria o rastreio e a identificação

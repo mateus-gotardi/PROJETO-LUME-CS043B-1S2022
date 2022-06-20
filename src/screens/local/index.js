@@ -17,13 +17,13 @@ const Local = () => {
         <div className='general'>
             <div className="container">
                 <div className='noImageBox'>
-                    <p className='info first'>
+                    <p className='info first hoverable'>
                         “Os investigadores dizem que os assassinos sabiam onde{' '}<span className='black'>||||||||||||||</span>{' '}e tinham informações sobre o carro que a levava”
                     </p><br />
-                    <p className='info second'>
+                    <p className='info second hoverable'>
                         “A polícia reconstitui, por meio de imagens de câmeras de rua, a viagem de cerca de uma hora feita pelo carro dos suspeitos, da Barra da Tijuca até o endereço{' '}<span className='black'>|||||||||||</span><br />Ao chegarem ao endereço, os suspeitos esperaram por duas horas”
                     </p>
-                    <p className='info first'>
+                    <p className='info first hoverable'>
                         “Os assassinos, a bordo de um Cobalt, seguiram o carro e a alguns quilômetros dali, no Largo do Estácio, região central, emparelharam o seu veículo{' '}<span className='black'>||||||||||||||</span>{' '}e efetuaram os disparos”
                     </p>
                     <p className='info second'>

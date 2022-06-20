@@ -23,7 +23,7 @@ const Imagens = () => {
                         foram desligadas, como parte do modus operandi dos criminosos”
                     </p>
                 </div>
-                <div className='noImageBox'>
+                <div className='noImageBox hoverable'>
                     <p className='info textCenter'>
                         “Pegamos todas as imagens do trajeto dos caras na ida, o tempo que permaneceram no local até o ponto de execução
                         {' '}<span className='black'>|||||||||||</span>{' '}
@@ -39,7 +39,7 @@ const Imagens = () => {
                 </div>
             </div>
 
-            <BackButton to='/arquivo' color='#F2CA39' done='48'/>
+            <BackButton to='/arquivo' color='#66CCFF' done='48'/>
         </div>
     )
 }

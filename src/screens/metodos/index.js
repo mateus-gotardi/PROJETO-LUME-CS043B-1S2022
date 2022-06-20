@@ -16,14 +16,14 @@ const Metodos = () => {
     return (
         <div className='general'>
             <div className='container'>
-                <div className='box'>
+                <div className='box hoverable'>
                     <p className='info textLeft'>
                         “Tudo era monitorado naquele momento. Sabia que meu alvo tinha muitas relações dentro da Polícia Civil e Militar.
                         Não era qualquer <Link className='link' to='/alvo'>alvo</Link> e não era possível fazer qualquer movimentação ali sem que ele percebesse.
                         Eu não podia mandar uma viatura lá para perguntar que horas ele saiu no dia do crime eu sabia que não podia errar”
                     </p>
                 </div>
-                <div className='box'>
+                <div className='box hoverable'>
                     <p className='info textRight marginTop5'>
                         “Pedimos que essa diligência fosse feita pelo serviço de inteligência em conjunto com a Polícia Federal. Precisávamos que tirassem do condomínio essa informação muito valiosa: a movimentação de entrada e saída de visitantes, sem que se chamasse atenção de ninguém”
                     </p>
@@ -37,7 +37,7 @@ const Metodos = () => {
                 </div>
             </div>
 
-            <BackButton to='/testemunho' color='#F2CA39' done='72'/>
+            <BackButton to='/testemunho' color='#66CCFF' done='72'/>
         </div>
     )
 }

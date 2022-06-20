@@ -17,10 +17,10 @@ const Delegado = () => {
         <div className='general'>
             <div className="container">
                 <div className='noImageBox'>
-                    <p className='info first'>“Na Polícia Civil, a investigação já foi chefiada por três delegados diferentes,
+                    <p className='info first hoverable'>“Na Polícia Civil, a investigação já foi chefiada por três delegados diferentes,
                      o que pode também ter atrasado o andamento do caso”
                     </p><br /> 
-                    <p className='info second'>“Pela quarta vez, houve uma troca de delegado, mostrando mais uma vez o descaso do governador
+                    <p className='info second hoverable'>“Pela quarta vez, houve uma troca de delegado, mostrando mais uma vez o descaso do governador
                      e o descaso da gente ter a comunicação prévia.{' '}<span className='black'>||||||||||||||||||</span>{' '}
                      Na época, foi informado que o então delegado seria afastado para fazer um intercâmbio na Itália e que seu
                       papel na investigação tinha sido cumprido. Nesse momento, começaram as suspeitas de
@@ -31,7 +31,7 @@ const Delegado = () => {
                     </p>
                 </div>
             </div>
-            <BackButton to='/tempo' color='#F2CA39' done='36'/>
+            <BackButton to='/tempo' color='#66CCFF' done='36'/>
         </div>
     )
 }

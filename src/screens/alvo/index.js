@@ -47,7 +47,7 @@ const Alvo = () => {
 
                 </div>
             </div>
-            <BackButton to='/metodos' color='#F2CA39' done='84' background='#F2CA39'/>
+            <BackButton to='/metodos' color='#66CCFF' done='84' background='#66CCFF'/>
         </div>
     )
 }

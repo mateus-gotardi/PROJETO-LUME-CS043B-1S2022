@@ -21,7 +21,7 @@ const Erro = () => {
                     </p>
                 </div>
             </div>
-            <div className='container marginTop5'>
+            <div className='container marginTop5 hoverable'>
                 <div className='box'>
                     <p className='info textCenter'>“Especialistas apontam que as autoridades cometeram erros básicos na investigação em seu primeiro ano, o que prejudicou o trabalho”</p>
                 </div>
@@ -32,7 +32,7 @@ const Erro = () => {
                 </div>
             </div>
             <div className='container marginTop5'>
-                <div className='noImageBox'>
+                <div className='noImageBox hoverable'>
                     <p className='info textCenter'>
                         “Revisitaram o banco de imagens, reprocessaram a imagem, descobriram que tinha um problema,
                         colocaram numa ferramenta que era capaz de ler aquela tecnologia, que era ultrapassada,
@@ -45,7 +45,7 @@ const Erro = () => {
                     </p>
                 </div>
             </div>
-            <BackButton to='/inicial' color='#F2CA39' done='48'/>
+            <BackButton to='/inicial' color='#66CCFF' done='48'/>
         </div>
     )
 }

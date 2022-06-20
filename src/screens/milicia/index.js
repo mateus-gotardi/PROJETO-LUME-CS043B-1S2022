@@ -6,13 +6,9 @@ import img1 from '../../assets/prints/milicia1.png'
 import img2 from '../../assets/prints/milicia2.png'
 import img3 from '../../assets/prints/milicia3.png'
 import { Link } from 'react-router-dom'
-import imageMap from 'image-map'
 
 const Milicia = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
-    useEffect(() => {
-        imageMap('img[usemap]')
-    }, [])
     useEffect(() => {
         if (searchList.milicia !== 'ok') {
             let tempList = searchList
@@ -24,7 +20,7 @@ const Milicia = () => {
         <div className='general'>
             <div className='container'>
                 <div className='printsBox'>
-                    <div className='printLeft'>
+                    <div className='printLeft hoverable'>
                         <img className='print' alt='print1' src={img1} />
                     </div>
                     <div className='printRight'>
@@ -35,7 +31,7 @@ const Milicia = () => {
                             </Link>
                         </map>
                     </div>
-                    <div className='printLeft'>
+                    <div className='printLeft hoverable'>
                         <img className='print' alt='print3' src={img3} useMap='#map2' />
                         <map name='map2'>
                             <Link to='/familia'>

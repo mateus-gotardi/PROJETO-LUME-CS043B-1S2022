@@ -22,14 +22,14 @@ const Silenciador = () => {
                         Um crime, duas mortes, 4 anos sem solução.
                     </p>
                     <p className='info textCenter'>
-                        Porque alguém cometeria este crime ?
+                        Por que alguém cometeria este crime ?
                     </p>
                     <p className='info textCenter'>
-                        E porque a <Link to='/investigacao' className='link'>investigação</Link> nunca chegou a resolvê-lo ?
+                        E por que a <Link to='/investigacao' className='link'>investigação</Link> nunca chegou a resolvê-lo?
                     </p>
                 </div>
             </div>
-            <BackButton to='/execucao' background='#F2CA39' color='#F2CA39' done='100'/>
+            <BackButton to='/inicial' background='#F2CA39' color='#F2CA39' done='100'/>
         </div>
     )
 }

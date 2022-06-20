@@ -20,10 +20,10 @@ const Investigacao = () => {
                     <p className='info first'>“A investigação tem um <Link className='link' to='/tempo'>tempo</Link> próprio, são as provas que serão coletadas no decorrer
                      das investigações e os resultados delas que determinaram quando as conclusões viram”
                     </p><br />
-                    <p className='info second'>“Esta investigação tem um complexidade, evidentemente, e é necessário que se mantenha
+                    <p className='info second hoverable'>“Esta investigação tem um complexidade, evidentemente, e é necessário que se mantenha
                      o sigilo sob pena de prejudicar a chance de êxito desse trabalho investigativo”
                     </p><br/>
-                    <p className='info first'>“A gente tem muito material para ser analisado ainda
+                    <p className='info first hoverable'>“A gente tem muito material para ser analisado ainda
                     {' '}<span className='black'>|||||||||||||</span>{' '}
                     a gente espera que a gente consiga entregar este resultado”
                     </p>

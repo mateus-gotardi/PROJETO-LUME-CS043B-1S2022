@@ -6,13 +6,9 @@ import img1 from '../../assets/prints/constituido1.png'
 import img2 from '../../assets/prints/constituido2.png'
 import img3 from '../../assets/prints/constituido3.png'
 import { Link } from 'react-router-dom'
-import imageMap from 'image-map'
 
 const Constituido = () => {
     const { searchList, setSearchList } = React.useContext(SearchContext)
-    useEffect(() => {
-        imageMap('img[usemap]')
-    }, [])
     useEffect(() => {
         if (searchList.constituido !== 'ok') {
             let tempList = searchList
@@ -24,17 +20,17 @@ const Constituido = () => {
         <div className='general'>
             <div className='container'>
                 <div className='printsBox'>
-                    <div className='printLeft'>
+                    <div className='printLeft hoverable'>
                         <img className='print' alt='print1' src={img1} />
                     </div>
-                    <div className='printRight'>
+                    <div className='printRight hoverable'>
                         <img className='print' alt='print2' src={img2} />
                     </div>
                     <div className='printLeft'>
                         <img className='print' alt='print3' src={img3} useMap='#map1' />
                         <map name='map1'>
                             <Link to='/envolvimento'>
-                                <area alt="envolvimento" title="envolvimento" coords="752,34,1010,87" shape="rect" />
+                                <area alt="envolvimento" title="envolvimento" coords="752,34,1010,87" shape="rect" data-coords="752,34,1010,87"/>
                             </Link>
                         </map>
                     </div>
