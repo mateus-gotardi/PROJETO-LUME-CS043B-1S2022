@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { SearchContext } from "../../providers/search";
 
 const Timer = () => {
-    const [minute, setMinute] = useState(10)
+    const [minute, setMinute] = useState(14)
     const [second, setSecond] = useState(0)
     const {setSearchList}=React.useContext(SearchContext)
     const navigate = useNavigate();
@@ -35,7 +35,7 @@ const Timer = () => {
                     escitorio: '', apoio: '', familia: '', poder: '', planalto:'', constituido:'', envolvimento:'', politicos:'',
                     rumo:'', ela:''
                 })
-                setMinute(10)
+                setMinute(14)
                 setSecond(0)
                 navigate('/home');
             }
