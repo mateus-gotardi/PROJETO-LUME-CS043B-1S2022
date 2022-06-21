@@ -12,8 +12,10 @@ Paula Cruz
 Mateus de Aguiar Gotardi
 
 <h2>Tecnologias Utilizadas</h2>
-- ReactJS
-- Node-Sass
-- React-router-dom
-- Reac-icons
-- image-map
+<ul>
+<li>ReactJS</li>
+<li>Node-Sass</li>
+<li>React-router-dom</li>
+<li>Reac-icons</li>
+<li>image-map</li>
+</ul>
