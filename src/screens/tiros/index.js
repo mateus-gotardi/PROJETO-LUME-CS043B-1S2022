@@ -31,7 +31,7 @@ const Tiros = () => {
                         <img alt='projétil lote uzz18/7,62' src={uzz18} className='image' />
                         <br />
                         <p className="info">“o lote de munição UZZ-18”</p><br />
-                        <p className="info hoverable">“Pela <Link className="link" to='/fragilidade'>fragilidade</Link> no controle das entradas e saídas de munições nas Polícias Militar e Federal e no Exército, é “praticamente impossível” rastrear a origem das balas usadas no assassinato”</p>
+                        <p className="info hoverable">“Pela <Link className="link" to='/fragilidade'>fragilidade</Link> no controle das entradas e saídas de munições nas Polícias Militar e Federal e no Exército é “praticamente impossível” rastrear a origem das balas usadas no assassinato”</p>
                     </div>
                 </div>
             </div>

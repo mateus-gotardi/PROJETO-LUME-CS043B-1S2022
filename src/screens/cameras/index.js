@@ -7,9 +7,9 @@ import React, { useEffect } from 'react';
 const Cameras = () => {
     const {searchList, setSearchList}=React.useContext(SearchContext)
     useEffect(()=>{
-        if (searchList.cameras!=='ok'){
+        if (searchList.camera!=='ok'){
             let tempList=searchList
-            tempList.cameras='ok'
+            tempList.camera='ok'
             setSearchList(tempList)
         }
     },[searchList, setSearchList])
@@ -21,7 +21,7 @@ const Cameras = () => {
                     </p><br />
                     <p className='info hoverable second'>“uma delas, a poucos metros da cena do crime, não grava imagens e serve apenas para contar os veículos que passam pela via”
                     </p><br/>
-                    <p className='info hoverable first'> “Não há informações do funcionamento delas. Outra{' '}<span className='black'>||||||||||||||</span>{' '}consta como defeituosa, mas funciona e revelou que a perseguição foi feita”
+                    <p className='info hoverable first'> “Não há informações do funcionamento delas. Outra{' '}<span className='black'>||||||||||||||</span>{' '}consta como defeituosa, mas funciona e revelou que a perseguição foi feita”.
                     <br/>“A câmera de trânsito{' '}<span className='black'>||||||||||||||</span>{' '}é de baixa definição, mas foi suficiente para descobrirmos que tinham dois carros <Link className='link' to='/seguindo'>seguindo</Link>. Consegue ver a cor, a marca. É uma informação para a investigação"
                     </p>
                 </div>

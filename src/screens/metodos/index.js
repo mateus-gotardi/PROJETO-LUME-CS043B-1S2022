@@ -20,7 +20,7 @@ const Metodos = () => {
                     <p className='info textLeft'>
                         “Tudo era monitorado naquele momento. Sabia que meu alvo tinha muitas relações dentro da Polícia Civil e Militar.
                         Não era qualquer <Link className='link' to='/alvo'>alvo</Link> e não era possível fazer qualquer movimentação ali sem que ele percebesse.
-                        Eu não podia mandar uma viatura lá para perguntar que horas ele saiu no dia do crime eu sabia que não podia errar”
+                        Eu não podia mandar uma viatura lá para perguntar que horas ele saiu no dia do crime{' '}<span className='black'>|||||||||||||</span>{' '}eu sabia que não podia errar”
                     </p>
                 </div>
                 <div className='box hoverable'>

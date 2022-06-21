@@ -26,7 +26,7 @@ const Bombeiro = () => {
                         <p className='info hoverable'>“A prisão de <span className='black'>Maxwell</span> tem muitas relações com quem hoje responde pelo assassinato”
                         </p>
                     </div>
-                    <p className='info hoverable second'>“Ele escondeu várias armas que foram lançadas ao mar. Se a arma do crime, de fato estava lá, não podemos afirmar. O que sabemos é que ele ocultou várias armas. Chegamos a ele após várias provas que estão no processo mostram que ele participou da ocultação” </p>
+                    <p className='info hoverable second'>“Ele escondeu várias armas que foram lançadas ao mar. Se a arma do crime, de fato estava lá, não podemos afirmar. O que sabemos é que ele ocultou várias armas. Chegamos a ele após várias provas que estão no processo, mostram que ele participou da ocultação” </p>
 
                 </div>
             </div>

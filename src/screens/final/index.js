@@ -11,7 +11,7 @@ const Final = () => {
                 <div className='noImageBox'>
                     <h1 className='finalTitle textCenter'>Quem mandou matar <Link to='/fontescs043b1s2022' className='finalTitle'>Marielle Franco?</Link></h1>
                     <p className='finalInfo textCenter'>
-                        O <Link to='/creditoscs043b1s2022' className='finalInfo'>Projeto Lume</Link> surgiu com uma inquietação, dar luz a arquivos de uma história cada vez mais complicada.
+                        O <Link to='/creditoscs043b1s2022' className='finalInfo'>Projeto Lume</Link> surgiu com uma inquietação: dar luz a arquivos de uma história cada vez mais complicada.
                         O caso Marielle Franco é tão complexo quanto triste, como a investigação corre em sigilo muito pouco se sabe sobre o que realmente aconteceu ou anda acontecendo;
                         ao mesmo tempo, se alguém for tentar buscar sobre o caso irá se deparar com uma pilha infinita de <Link to='/fontescs043b1s2022' className='finalInfo'>informações</Link>: notícias, reportagens, vídeos, áudios, fake news,
                         e assim por diante. Na tentativa de não deixar que esta história se perca, e no pior dos casos seja esquecida, este projeto tenta estabelecer uma nova relação

@@ -51,7 +51,7 @@ const Fontes = () => {
                             O assassinato de Marielle Franco e o avanço das milícias no Rio
                         </a>
                     </p>
-                    <h2 className='topic'>Câmeras</h2>
+                    <h2 className='topic'>Câmera</h2>
                     <p className='info creditItem'>
                         <a target='blank' href='https://piaui.folha.uol.com.br/materia/a-metastase/' className='link'>
                             O assassinato de Marielle Franco e o avanço das milícias no Rio

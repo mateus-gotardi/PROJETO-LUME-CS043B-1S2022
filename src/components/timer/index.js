@@ -9,7 +9,7 @@ const Timer = () => {
     const navigate = useNavigate();
     useEffect(()=>{
         setSearchList({
-            alvo: '', arma: '', arquivo: '', bombeiro: '', cameras: '', carro: '', confundir: '',
+            alvo: '', arma: '', arquivo: '', bombeiro: '', camera: '', carro: '', confundir: '',
             crime: '', delegado: '', erro: '', execucao: '', fragilidade: '', imagens: '', interferencia: '',
             investigacao: '', local: '', lume: '', metodos: '', negro: '', passo: '', placas: '', rastreamento: '',
             seguindo: '', sigilo: '', silenciador: '', tempo: '', testemunho: '', tiros: '', quem: '', milicia: '',
@@ -28,7 +28,7 @@ const Timer = () => {
                 }
             }else{
                 setSearchList({
-                    alvo: '', arma: '', arquivo: '', bombeiro: '', cameras: '', carro: '', confundir: '',
+                    alvo: '', arma: '', arquivo: '', bombeiro: '', camera: '', carro: '', confundir: '',
                     crime: '', delegado: '', erro: '', execucao: '', fragilidade: '', imagens: '', interferencia: '',
                     investigacao: '', local: '', lume: '', metodos: '', negro: '', passo: '', placas: '', rastreamento: '',
                     seguindo: '', sigilo: '', silenciador: '', tempo: '', testemunho: '', tiros: '', quem: '', milicia: '',

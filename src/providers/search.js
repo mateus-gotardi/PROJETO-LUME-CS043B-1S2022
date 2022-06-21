@@ -5,7 +5,7 @@ export const SearchContext = React.createContext({})
 export const SearchProvider = (props) => {
 
     const [searchList, setSearchList] = useState({
-        alvo: '', arma: '', arquivo: '', bombeiro: '', cameras: '', carro: '', confundir: '',
+        alvo: '', arma: '', arquivo: '', bombeiro: '', camera: '', carro: '', confundir: '',
         crime: '', delegado: '', erro: '', execucao: '', fragilidade: '', imagens: '', interferencia: '',
         investigacao: '', local: '', lume: '', metodos: '', negro: '', passo: '', placas: '', rastreamento: '',
         seguindo: '', sigilo: '', silenciador: '', tempo: '', testemunho: '', tiros: '', quem: '', milicia: '',

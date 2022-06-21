@@ -57,7 +57,7 @@ function App() {
     const screens = {
       home: <Home />, inicial: <Inicial />, crime: <Crime />,
       arma: <Arma />, tiros: <Tiros />, bombeiro: <Bombeiro />, fragilidade: <Fragilidade />,
-      carro: <Carro />, cameras: <Cameras />, placas: <Placas />, local: <Local />, seguindo: <Seguindo />,
+      carro: <Carro />, camera: <Cameras />, placas: <Placas />, local: <Local />, seguindo: <Seguindo />,
       rastreamento: <Rastreamento />, execucao: <Execucao />, negro: <Negro />, silenciador: <Silenciador />,
       investigacao: <Investigacao />, tempo: <Tempo />, delegado: <Delegado />, arquivo: <Arquivo />,
       interferencia: <Interferencia />, erro: <Erro />, imagens: <Imagens />, testemunho: <Testemunho />,

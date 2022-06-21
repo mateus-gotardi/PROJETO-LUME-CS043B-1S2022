@@ -20,11 +20,11 @@ const Fragilidade = () => {
                     <p className='info hoverable first'>“Não é fácil investigar um crime em que
                         foi premeditado por pessoas que escolheram o local e o momento de executá-lo"
                     </p><br />
-                    <p className='info hoverable second'>“Infelizmente foi um crime muito sofisticado,
+                    <p className='info hoverable second'>“Infelizmente, foi um crime muito sofisticado,
                         muito bem elaborado, e a gente consegue
                         ter compreensão razoável sobre isso, mas também é preciso compreender que não há crime perfeito”
                     </p><br/>
-                    <p className='info second'>“O profissionalismo dos executores,
+                    <p className='info second'>“O profissionalismo dos executores
                         eleva o grau de dificuldade da elucidação do crime”
                     </p><br/>
                     <p className='info hoverable first'>“Nem o <Link className='link' to='/carro'>carro</Link> dos criminosos foram encontrados,
