@@ -22,7 +22,7 @@ const Silenciador = () => {
                         Um crime, duas mortes, 4 anos sem solução.
                     </p>
                     <p className='info textCenter'>
-                        Por que alguém cometeria este crime ?
+                        Por que alguém cometeria este crime?
                     </p>
                     <p className='info textCenter'>
                         E por que a <Link to='/investigacao' className='link'>investigação</Link> nunca chegou a resolvê-lo?
