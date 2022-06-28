@@ -30,12 +30,13 @@ const Rumo = () => {
                         </div>
                         <div className='printRow'>
                             <img className='print' alt='print3' src={img3} useMap='#map1' />
-                        </div>
-                        <map name='map1'>
-                            <Link to='/ela'>
-                                <area alt="ela" title="ela" coords="730,37,781,92" shape="rect" />
+                            <map name='map1'>
+                            <Link to='/ela' className='area'>
+                                <area alt="ela" title="ela" coords="728,41,777,78" shape="rect" />
                             </Link>
                         </map>
+                        </div>
+                        
                     </div>
                     <div className='printRight'>
                         <img className='print' alt='print3' src={img4} />

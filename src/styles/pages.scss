@@ -17,18 +17,25 @@
     box-sizing: border-box;
     width: 100%;
 }
-.creditsContainer{
+
+.creditsContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.logos{
+
+.icon {
+    zoom: 130%;
+}
+
+.logos {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
-.logo{
-    height:16vh;
+
+.logo {
+    height: 16vh;
     margin-left: 5vw;
 }
 
@@ -122,6 +129,7 @@
     margin-bottom: 10px;
     text-decoration: none;
 }
+
 .finalInfo {
     padding-bottom: 20px;
     margin: 0;
@@ -131,7 +139,7 @@
     text-decoration: none;
 }
 
-.subTitle{
+.subTitle {
     width: 100%;
     color: $custom-grey-darker;
     font-size: 40px;
@@ -139,7 +147,8 @@
     margin-bottom: 10px;
     text-decoration: none;
 }
-.topic{
+
+.topic {
     width: 100%;
     color: $custom-grey-darker;
     font-size: 30px;
@@ -147,7 +156,8 @@
     margin-bottom: 0;
     text-decoration: none;
 }
-.creditItem{
+
+.creditItem {
     width: 100%;
 }
 
@@ -169,14 +179,31 @@
     opacity: 100;
 }
 
-.link {
+.mapItem {
+    font-size: 25px;
     text-decoration: none;
     color: $custom-grey-darker;
 }
 
-.mapItem {
-    font-size: 25px;
+.link {
+    background: $custom-grey-darker;
+    text-decoration: none;
+    color: $custom-grey-darker;
 }
+
+.link:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    background: none;
+}
+
+.linkFinal {
+    text-decoration: underline;
+}
+.color-black{
+    color: $custom-grey-darker;
+}
+
 
 .mapItensContainer {
     width: 75vw;
@@ -300,24 +327,31 @@
         padding-left: 0%;
         padding-right: 0%;
     }
-    .creditsContainer{
+
+    .creditsContainer {
         flex-direction: column;
-        .logos{
+
+        .logos {
             padding-top: 20px;
         }
     }
-    .finalTitle{
+
+    .finalTitle {
         font-size: 40px;
     }
-    .finalInfo{
+
+    .finalInfo {
         font-size: 18px;
     }
-    .subTitle{
+
+    .subTitle {
         font-size: 30px;
     }
-    .topic{
+
+    .topic {
         font-size: 23px;
     }
+
     .row {
         flex-direction: column;
         width: 90vw;
@@ -360,10 +394,6 @@
         font-size: 18px;
     }
 
-    .link {
-        color: $custom-grey-dark;
-    }
-
     .noImageBox {
         height: fit-content;
         width: 95vw;
@@ -383,6 +413,12 @@
     .sideText {
         width: 95vw;
         margin-right: 0;
+    }
+
+    .link {
+        text-decoration: none;
+        color: $custom-grey-dark;
+        background: none;
     }
 }
 

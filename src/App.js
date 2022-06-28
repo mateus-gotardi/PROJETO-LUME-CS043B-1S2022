@@ -47,7 +47,7 @@ import Ela from "./screens/ela";
 import Final from "./screens/final";
 import Fontes from "./screens/fontes";
 import Creditos from "./screens/creditos";
-import imageMap from "image-map";
+import GameOver from "./screens/gameOver";
 
 function App() {
   const [isHome, setIsHome] = useState(false)
@@ -65,19 +65,17 @@ function App() {
       sigilo: <Sigilo/>, quem: <Quem/>, milicia: <Milicia/>, escritorio: <Escritorio/>, familia: <Familia/>,
       poder: <Poder/>, apoio: <Apoio/>, planalto: <Planalto/>, constituido: <Constituido/>, 
       envolvimento: <Envolvimento/>, politicos: <Politicos/>, rumo: <Rumo/>, ela: <Ela/>,
-      finalcs043b1s2022:<Final/>, fontescs043b1s2022: <Fontes/>, creditoscs043b1s2022: <Creditos/>
+      finalcs043b1s2022:<Final/>, fontescs043b1s2022: <Fontes/>, creditoscs043b1s2022: <Creditos/>,gameover:<GameOver/>
     }
     let keys = Object.keys(screens)
     let { id } = useParams();
-    if (id === 'home'||id==='finalcs043b1s2022'||id==='fontescs043b1s2022'||id==='creditoscs043b1s2022') {
+    if (id==='gameover'||id === 'home'||id==='finalcs043b1s2022'||id==='fontescs043b1s2022'||id==='creditoscs043b1s2022') {
       setIsHome(true)
     } else {
       setIsHome(false)
     }
     
     if (keys.indexOf(id)!==-1){
-      imageMap('img[usemap]')
-      console.log(imageMap('img[usemap]'))
       return (screens[id])
     }else{
       return <Navigate to="/inicial" />

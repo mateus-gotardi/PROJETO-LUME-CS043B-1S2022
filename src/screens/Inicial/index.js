@@ -12,7 +12,7 @@ const Inicial = () => {
         <div className="mapGeneral">
             <div className="mapContainer">
                 <div className='mapItensContainer'>
-                    <Link to='/crime' className="link mapItem crime">crime</Link>
+                    <Link to='/crime' className="mapItem crime">crime</Link>
                     {keys.map((i)=>{
                         if (searchList[i]==='ok'){
                             let name = i
@@ -22,7 +22,7 @@ const Inicial = () => {
                                 name=acentuados[i]
                             }
                             return(
-                                <Link key={i} to={'/'+i} className={'link mapItem '+i}>{name}</Link>
+                                <Link key={i} to={'/'+i} className={'mapItem '+i}>{name}</Link>
                             )
                         }else{return(null)}
                     })}

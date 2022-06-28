@@ -29,7 +29,7 @@ const Fragilidade = () => {
                     </p><br/>
                     <p className='info hoverable first'>“Nem o <Link className='link' to='/carro'>carro</Link> dos criminosos foram encontrados,
                         até hoje a rota de fuga usada pelos criminosos ainda é uma incógnita,
-                        apesar das inúmeras <Link className='link' to='/cameras'>câmeras</Link> de monitoramento espalhadas pela cidade”
+                        apesar das inúmeras <Link className='link' to='/camera'>câmeras</Link> de monitoramento espalhadas pela cidade”
                     </p>
 
                 </div>

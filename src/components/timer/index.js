@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { SearchContext } from "../../providers/search";
+import imageMap from "image-map";
 
 const Timer = () => {
     const [minute, setMinute] = useState(14)
@@ -19,6 +20,7 @@ const Timer = () => {
     },[setSearchList])
     useEffect(() => {
         setTimeout(() => {
+            imageMap('img[usemap]')
             if (minute >= 0) {
                 if (second > 0) {
                     setSecond(second - 1)
@@ -37,7 +39,7 @@ const Timer = () => {
                 })
                 setMinute(14)
                 setSecond(0)
-                navigate('/home');
+                navigate('/gameover');
             }
         }, 1000);
     });
