@@ -8,6 +8,8 @@ const Fontes = () => {
             <div className="container">
                 <div className='noImageBox'>
                     <h1 className='subTitle'>Fontes</h1>
+                    <h2 className='topic'>Projeto Completo</h2>
+                    <p className='info creditItem'><a href='https://www.academia.edu/s/52809b6211?source=link' target="_blank" rel='noreferrer' className='color-black linkFinal'>Leia o Projeto completo clicando aqui.</a></p>
                     <h2 className='topic'>Crime</h2>
                     <p className='info creditItem'><a target='_blank' rel='noreferrer' href='https://globoplay.globo.com/v/10387594/' className='linkFinal color-black'>Caso Marielle: quatro anos depois, ainda não se sabe o mandante dos assassinatos</a></p>
                     <h2 className='topic'>Arma</h2>
